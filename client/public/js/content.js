@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     currInterval = setInterval(() => {
       if (activeUrl.length) {
         console.log(`Data to save: user: ${userId} time: 5 url: ${activeUrl}`);
-        $.post("https://tranquil-wildwood-15780.herokuapp.com/updateStats", {
+        $.post("https://trackrserver.herokuapp.com/updateStats", {
           userId: userId,
           time: 5,
           url: activeUrl,
@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     currInterval = setInterval(() => {
       if (activeUrl.length) {
         console.log(`Data to save: user: ${userId} time: 5 url: ${activeUrl}`);
-        $.post("https://tranquil-wildwood-15780.herokuapp.com/updateStats", {
+        $.post("https://trackrserver.herokuapp.com/updateStats", {
           userId: userId,
           time: 5,
           url: activeUrl,

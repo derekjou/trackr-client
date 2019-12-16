@@ -24,7 +24,7 @@ $(document).ready(function() {
           localStorage.setItem("name", username);
           localStorage.setItem("userId", userInfo.id.toString());
           $("#helloText").text(`Welcome, ${username}`);
-          $.post("https://tranquil-wildwood-15780.herokuapp.com/createUser", {
+          $.post("https://trackrserver.herokuapp.com/createUser", {
             name: username,
             userId: userInfo.id.toString()
           })
