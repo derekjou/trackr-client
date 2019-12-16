@@ -10,7 +10,7 @@ function Insights() {
 
   useEffect(() => {
     fetch(
-      "https://tranquil-wildwood-15780.herokuapp.com/allStats/" +
+      "https://trackrserver.herokuapp.com/allStats/" +
         localStorage.getItem("userId")
     )
       .then(function(response) {

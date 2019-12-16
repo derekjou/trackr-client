@@ -13,7 +13,7 @@ function Dashboard() {
 	const [ activeButtons, setActiveButtons ] = useState([ true, false, false ]);
 
 	useEffect(() => {
-		fetch('https://tranquil-wildwood-15780.herokuapp.com/allStats/' + localStorage.getItem('userId'))
+		fetch('https://trackrserver.herokuapp.com/allStats/' + localStorage.getItem('userId'))
 			.then(function(response) {
 				return response.json();
 			})
