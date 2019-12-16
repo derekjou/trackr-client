@@ -21,7 +21,6 @@ function Dashboard() {
 				return myJson.stats;
 			})
 			.then(function(stats) {
-				console.log(stats);
 				stats = stats.map((item) => {
 					let url = item.url.split('/')[2];
 					let parsed = psl.parse(url);
