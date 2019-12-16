@@ -1,1 +1,1 @@
-###Trackr Chrome Extension
+# Trackr Chrome Extension
